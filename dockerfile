@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y nginx
 
 # Copy the HTML, CSS, and JavaScript files to the appropriate location
 COPY index.html /var/www/html/
-COPY style.css /var/www/html/
+COPY styles.css /var/www/html/
 COPY script.js /var/www/html/
 
 # Expose port 80 to allow external access to the web server
